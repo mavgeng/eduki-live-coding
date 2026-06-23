@@ -36,3 +36,6 @@ phpdocs-models:
 
 pint:
 	docker compose run --rm php-cli composer run pint
+
+ide-docs:
+	docker compose run --rm php-cli php artisan ide-helper:models --write-mixin
